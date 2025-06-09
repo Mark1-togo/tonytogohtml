@@ -13,14 +13,43 @@
         <form id="survey-form">
           <fieldset>
             <legend>Personal Information</legend>
-            <label for="name">Name</label>
-          <input id="name" type="text" />
-          <label for="email">Email</label>
-          <input id="email" type="email">
-          <label for="number">Number</label>
-          <input id="number" type="number">
-        </form>
+            <label for="name-label" id="name-label">Name</label>
+          <input id="name" type="name" name="name" required placeholder="full-name">
+          <label for="email-label" id="email-label">Email</label>
+          <input id="email" type="email" name="email" required placeholder="example@gmail.com">
+             <label for="number-label" id="number-label">Age (optional)</label>
+          <input id="number" type="number" min="5" max="10" placeholder="Age">
+
           </fieldset>
+          <fieldset>
+            <legend>Which option best describe your current role</legend>
+            <select id="dropdown" name="select-current-role">
+              <option value="junior-developer">Junior Developer</option>
+              <option value="senior-developer">Senior Developer</option>
+              <option value="fullstack-developer" selected>fullstack Developer</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label for="yes-option">Yes<label>
+              <input type="radio" id="yes-option" name="recommend-freecodecamp" value="yes-option">
+              <label for="no-option" >No<label>
+                <input type="radio" id="no-option" name="recommend-freecodecamp" value="no-option">
+          </fieldset>
+          <fieldset>
+            <legend>What would you want to improve</legend>
+            <label for=""front-end>Frontend Development</label>
+            <input type="checkbox" id="front-end" name="front-end" value="front-end">
+            <label for=""front-end>Backend Development</label>
+            <input type="checkbox" id="front-end" name="front-end" value="back-end">
+            <label for=""front-end>Fullstack Development</label>
+            <input type="checkbox" id="front-end" name="front-end" value="front-end">
+          </fieldset>
+
+          <label for="textarea">Any comments or suggestions?</label>
+          <textarea id="comments" name="commets" cols="30" rows="10" placeholder="place your text here"></textarea>
+          <button id="submit">Submit</button>
+        </form>
           
       </main>
   <body>
