@@ -492,3 +492,13 @@ Please complete the assignment
 Submit
 Ask for Help
 Navigated to HTML Review
+
+<!-- ----------STYLESHEET -------------->
+For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+
+You learned about the viewport meta element in the previous lecture videos.
+
+Here is an example:
+
+Example Code
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
