@@ -1,0 +1,86 @@
+body{
+    font-family: Sans-serif;
+    padding: 30px;
+    background-image: url('./pics/mariah-hewines-33fVIQwXlU8-unsplash.jpg');
+    background-position: center;/*center the image*/
+    background-size: cover;/*cover entire area*/
+    background-repeat: no-repeat;/*prevent tiling*/
+    background-attachment: fixed;/*optional:fixes img on scroll */
+}
+header{
+    text-align: center;
+}
+#menu{
+    background-color: burlywood;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+h1{
+    margin-top: 0;
+}
+.established{
+    font-style: italic;
+}
+.headings p{
+    display: inline-block;
+}
+.food-type{
+    text-align: left;
+    font-style: italic;
+    width: 75%;
+    font-size: small;
+}
+.description{
+    font-style: italic;
+    font-size: small;
+    text-align: right;
+    text-align: right;
+    width: 25%;
+}
+
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+h1, h2{
+    font-family: Impact, serif;
+}
+h1, h2, p{
+    text-align: center;
+}
+.flavor, .dessert{
+    width: 75%;
+    text-align: left;
+}
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+.bottom-line{
+    margin-bottom: 25px;
+}
+hr{
+   height: 3px; 
+   background-color: brown;
+   border-color: brown;
+}
+
+/* -------------    FOOTER ---------------*/
+a {
+    color: black;
+}
+a:hover {
+    color: brown;
+}
+a:active {
+    color: brown;
+}
+address{
+    margin-bottom: 5px;
+}
