@@ -6,8 +6,11 @@ p{
   margin-top:5px;
   margin-bottom:5px;
 }
-a{
-    text-decoration: none;
+.full-name{
+    color: gray;
+}
+.designation{
+    color: darkgray;
 }
 .business-card{
     font-size: 16px;
@@ -21,4 +24,13 @@ a{
 }
 .profile-image{
     max-width: 100%;
+}
+/* ----------FOOTER ----------- */
+
+a{
+    text-decoration: none;
+}
+.social-media a{
+    color: maroon;
+    margin: 10px;
 }

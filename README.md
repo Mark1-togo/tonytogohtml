@@ -502,3 +502,9 @@ Here is an example:
 
 Example Code
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!---------------------------------- CSS ----------------------->
+Inline, Block, and Inline-Block Level Elements
+Inline Level Elements: Inline elements only take up as much width as they need and do not start on a new line. These elements flow within the content, allowing text and other inline elements to appear alongside them. Common inline elements are span, anchor, and img elements.
+Block Level Elements: Block-level elements start on a new line and take up the full width available to them by default, stretching across the width of their container. Some common block-level elements are div, paragraph, and section elements.
+Inline-Block Level Elements: You can set an element to inline-block by using the display property. These elements behave like inline elements but can have a width and height set like block-level elements.
