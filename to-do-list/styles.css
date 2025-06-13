@@ -6,22 +6,50 @@ body{
     font-family: Arial, sarif;
     background-color: #f0f0f0;
 }
-h1{
-    margin: 10px;
-    text-align: center;
+.container{
     margin-top: 40px;
-}
-.to-do-list{
     width: 80%;
     max-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background: white;
-    margin-top:20px;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
-.todo-list{
-    margin: 20px;
-    height: 50px;
+h1{
+    font-size: 29px;
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(211, 228, 235);
+    margin: 10px;
+    border-radius: 5px;
+}
+.sub-item{
+    list-style: disc;
+    margin-left: 20px;
+    font-size: small;
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+
+}
+a:focus{
+    outline: 4px solid rgb(74, 74, 240);
+    padding: 2px;
+}
+a:active{
+    color: orange;
+}
+a:visited{
+    color: black;
 }
