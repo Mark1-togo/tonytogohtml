@@ -1,0 +1,32 @@
+body{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    min-height: calc(100vh -100px);
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: calc(100vh - 100px);
+}
+header{
+    text-align: center;
+}
+section{
+    text-align: center;
+ width: 80%;
+ margin-right: auto;
+ margin-left: auto;
+}
+ul {
+    display: inline-block;
+}
+hr{
+    width: 70%;
+}
+main p{
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
