@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Application form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -14,21 +15,22 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Enter your email">
             <label for="select">Position</label>
-            <select name="" id="" >
+            <select name="position" id="position" >
                 <option value="select option">Select a position</option>
                 <option value="developer">Developer</option>
                 <option value="designer">Designer</option>
                 <option value="manager">Manager</option>
             </select>
-            <fieldset>
+            <fieldset class="radio-group">
                 <legend>Availability</legend>
+                <input type="radio" name="availability" id="full-time">
                 <label for="full-time">Full-Time</label>
-                <input type="radio" name="availability">
+                <input type="radio" name="availability" id="part-time">
                 <label for="part-time">Part-Time</label>
-                <input type="radio" name="availability">
+                
             </fieldset>
             <textarea name="message" id="message"></textarea>
-            <button>submit</button>
+            <button type="submit" class="submit-btn">submit</button>
         </form>
     </div>
 </body>
