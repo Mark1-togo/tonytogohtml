@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+#email{
+    background-color: seashell;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 50px;
+    width: 500px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px darkgray;
+}
+#top-secret{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 0 0 250px;
+    border: 2px solid red;
+    transform: rotate(45deg);
+    color: red;
+
+}
+#confidential{
+    display: inline-block;
+    padding: 5px;
+    margin-left: 182px;
+    border: 2px solid red;
+    transform: rotate(-45deg);
+    color: red;
+}
+.blurred{
+    filter: blur(3px);
+}
+p{
+    width: 80%;
+    margin: 10px auto;
+}
