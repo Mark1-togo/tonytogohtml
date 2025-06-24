@@ -20,6 +20,7 @@
     margin: 10px;
     
 }
+/* --------------- ABSOLUTE positioning should be handled carefully --------------*/
 .absolute-div{
     position: absolute;
     width: 40px;
@@ -27,4 +28,44 @@
     background-color: yellow;
     left: 140px;
     top: 50px;
+    
+}
+.zindex{
+    position: relative;
+    border: 1px solid black;
+    margin: 10px;
+    width: 70%;
+    height: 200px;
+}
+.zindex h2{
+    position: absolute;
+    margin-top: -5px;
+}
+.red{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.yellow{
+    position: absolute;
+    z-index: 3;
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    top: 40px;
+    left: 40px;
+
+}
+.green{
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 60px;
+    background-color: green;
+    height: 100px;
+    width: 100px
 }
