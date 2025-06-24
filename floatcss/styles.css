@@ -1,0 +1,20 @@
+.container{
+  width: 80%;
+  border: 1px solid black;
+}
+.float{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+.container::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+p{
+    float: right;
+    margin: 10px;
+}
