@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+table{
+    border-collapse: collapse;
+}
+.read .status{
+    background: linear-gradient(to bottom, rgb(253, 255, 253), darkgreen);
+}
+.to-read .status{
+    background: linear-gradient(to bottom, rgb(250, 241, 241), red);
+}
+.in-progress .status{
+    background: linear-gradient(to bottom, rgb(236, 228, 219), rgb(255, 136, 0));
+}
+tr span {
+    display: inline-block;
+
+}
+tr span[class="status"]{
+    border-radius: 10px;
+    padding: 4px;
+}
+.to-read span[class="status"],
+.in-progress span[class="status"]
+{
+    background-image: ;
+    border: none;
+   
+}
+span[class="status"],
+span[class="rate"]{
+    width: 100%;
+    padding: 0.2rem;
+}
+span[class~="rate"] > span {
+   
+    border: 1px solid rgb(94, 91, 91);
+    border-radius: 50%;
+    margin: 0.4rem;
+    width:  1rem;
+    height: 1rem;
+    background-color: white;
+}
+span[class~="one"] > span:first-child{
+    background: linear-gradient(to top, red, green);
+}
+span[class~="two"] > span:not(:first-child){
+    background: linear-gradient(to top, red, green);
+}
+span[class~="three"] > span{
+    background: linear-gradient(to top, red, green);
+}
+tr[class="read"]{
+    background: linear-gradient(to bottom, rgb(246, 247, 246), rgb(127, 243, 127));
+    column-gap: normal;
+}
+tr[class="in-progress"]{
+    background: linear-gradient(to bottom, rgb(246, 247, 246), rgb(231, 158, 124));
+    column-gap: normal;
+}
+tr[class="to-read"]{
+    background: linear-gradient(to bottom, rgb(246, 247, 246), rgb(75, 219, 224));
+    column-gap: normal;
+}
