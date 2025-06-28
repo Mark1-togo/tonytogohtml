@@ -1,71 +1,87 @@
-*{
-    margin: 0;
-    bottom: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-table{
-    border-collapse: collapse;
-}
-.read .status{
-    background: linear-gradient(to bottom, rgb(253, 255, 253), darkgreen);
-}
-.to-read .status{
-    background: linear-gradient(to bottom, rgb(250, 241, 241), red);
-}
-.in-progress .status{
-    background: linear-gradient(to bottom, rgb(236, 228, 219), rgb(255, 136, 0));
-}
-tr span {
-    display: inline-block;
-
-}
-tr span[class="status"]{
-    border-radius: 10px;
-    padding: 4px;
-}
-.to-read span[class="status"],
-.in-progress span[class="status"]
-{
-    background-image: ;
-    border: none;
-   
-}
-span[class="status"],
-span[class="rate"]{
+/* Basic table styling */
+table {
     width: 100%;
-    padding: 0.2rem;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
-span[class~="rate"] > span {
-   
-    border: 1px solid rgb(94, 91, 91);
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Attribute selector for read rows */
+tr[class~="read"] {
+    background-image: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+}
+
+/* Attribute selector for to-read rows */
+tr[class~="to-read"] {
+    background-image: linear-gradient(135deg, #fff3e0, #ffe0b2);
+}
+
+/* Attribute selector for in-progress rows */
+tr[class~="in-progress"] {
+    background-image: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+/* All span elements display inline-block */
+span {
+    display: inline-block;
+}
+
+/* Status spans in to-read rows */
+tr[class~="to-read"] span[class~="status"] {
+    border: 2px solid #ff9800;
+    background-image: linear-gradient(45deg, #fff3e0, #ffcc02);
+}
+
+/* Status spans in read rows */
+tr[class~="read"] span[class~="status"] {
+    border: 2px solid #4caf50;
+    background-image: linear-gradient(45deg, #e8f5e8, #66bb6a);
+}
+
+/* Status spans in in-progress rows */
+tr[class~="in-progress"] span[class~="status"] {
+    border: 2px solid #2196f3;
+    background-image: linear-gradient(45deg, #e3f2fd, #42a5f5);
+}
+
+/* Status spans and rate spans styling */
+span[class~="status"], span[class^="rate"] {
+    height: 25px;
+    width: 80px;
+    padding: 5px;
+}
+
+/* Direct children of rate spans */
+span[class^="rate"] > span {
+    border: 1px solid #ccc;
     border-radius: 50%;
-    margin: 0.4rem;
-    width:  1rem;
-    height: 1rem;
-    background-color: white;
+    margin: 2px;
+    height: 12px;
+    width: 12px;
+    background-color: #f0f0f0;
 }
-span[class~="one"] > span:first-child{
-    background: linear-gradient(to top, red, green);
+
+/* First descendant of spans with "one" in class */
+span[class~="one"] span:first-child {
+    background-image: linear-gradient(45deg, #ffeb3b, #ffc107);
 }
-span[class~="two"] > span:not(:first-child){
-    background: linear-gradient(to top, red, green);
+
+/* First two descendants of spans with "two" in class */
+span[class~="two"] span:nth-child(-n+2) {
+    background-image: linear-gradient(45deg, #ffeb3b, #ffc107);
 }
-span[class~="three"] > span{
-    background: linear-gradient(to top, red, green);
-}
-tr[class="read"]{
-    background: linear-gradient(to bottom, rgb(246, 247, 246), rgb(127, 243, 127));
-    column-gap: normal;
-}
-tr[class="in-progress"]{
-    background: linear-gradient(to bottom, rgb(246, 247, 246), rgb(231, 158, 124));
-    column-gap: normal;
-}
-tr[class="to-read"]{
-    background: linear-gradient(to bottom, rgb(246, 247, 246), rgb(75, 219, 224));
-    column-gap: normal;
+
+/* All descendants of spans with "three" in class */
+span[class~="three"] span {
+    background-image: linear-gradient(45deg, #ffeb3b, #ffc107);
 }
