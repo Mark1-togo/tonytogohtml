@@ -71,3 +71,18 @@ article code{
     background-color: rgb(96, 103, 109);
     padding: 10px;
 }
+@media screen and (max-width: 768px) {
+    #navbar{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #main-doc{
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+    }
+    .main-section header{
+        font-size: 1.6rem;
+    }
+}
