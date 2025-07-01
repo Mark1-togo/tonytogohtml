@@ -1,0 +1,73 @@
+html{
+    
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+
+}
+body{
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+nav{
+    
+    display: block;
+    min-width: 150px;
+    height: 100%;
+    position: fixed;
+    border-right: 2px solid rgba(0, 22, 22, 0.4);
+    top: 0;
+    left: 0;
+    
+}
+a[class~="nav-link"]{
+   text-decoration: none;
+   color: black;
+}
+nav ul > li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+nav header{
+    text-align: center;
+    margin: 4px;
+}
+header{
+    font-size: 1.5rem;
+}
+
+#main-doc{
+    width: calc(100vw - 270px);
+    position: relative;
+    margin-left: 220px;
+    box-sizing: border-box;
+    
+    
+}
+.main-section{
+    margin-left: 20px;
+    padding: 8px;
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;/*prevent code blocks from causing overflow*/
+}
+p{
+    line-height: 2em;
+}
+.main-section{
+    margin: 5px;
+    width: 100vw;
+}
+article code{
+    font-family: monospace;
+    display: block;
+    width: 50%;
+    background-color: rgb(96, 103, 109);
+    padding: 10px;
+}
