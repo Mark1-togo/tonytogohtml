@@ -18,6 +18,7 @@ body{
     top: 0;
     border-right: 2px solid rgb(27, 27, 27);
     overflow-y: scroll;
+    background-color: white;
 }
 nav header{
     font-size: 2em;
@@ -75,18 +76,29 @@ section ul{
     unicode-bidi: isolate;
 }
 @media screen and (max-width: 768px) {
-    nav{
-        display: block;
+    .nav-bar{
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        z-index: 1000;
+        height: auto;
+        min-width: unset;
+        border-right: none;
+        z-index: 3; 
     }
-    nav li{
-        text-align: center;
+    .nav-bar ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
     }
-#main-doc{
-    display: relative;
-}
+     #main-doc {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 130px; /* Adjust based on nav height */
+                padding: 1em;
+                z-index: 2;
+            }
 
 }   
     
