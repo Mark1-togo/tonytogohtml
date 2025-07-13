@@ -39,15 +39,14 @@ body{
 .feature-article{
     display: grid;
     grid-area: feature-article;
-    grid-column: 1 / 3;
     background-color: white;
-    
     padding: 20px;
     flex-direction: column;
 }
 .small-article1{
+    background-color: var(--grid-lastcolors);
     display: grid;
-    grid-column: 1 / 2;
+    
     grid-area:small-article1;
       flex-direction: column;
             justify-content: center;
@@ -56,6 +55,7 @@ body{
     grid-area:small-article2;
     display: flex;
     flex-direction: column;
+    background-color: var(--grid-lastcolors);
    
 }
 .cover-image{
