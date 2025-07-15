@@ -37,6 +37,8 @@ figure #img-logo{
     grid-area: img-logo;
 }
 .nav-bar {
+    position: fixed;
+    z-index: 999;
     grid-area: nav-bar;
 }
 #nav-bar ul{
@@ -125,4 +127,16 @@ footer{
 }
 footer ul li{
     display: inline;
+}
+@media screen and (max-width: 720px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        text-wrap: wrap;
+    }
+    #features{
+        width: 80vw;
+    }
 }
