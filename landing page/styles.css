@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-font: 'Arial', sans-serif;
+    --body-color: #EEEEEE;
+    --button-color: #F1C40F;
+    --titles-size: 1.5rem;
+    --last-borders: 1px solid;
+    --button-width: 150px;
+
+}
+body{
+    font-size: 16px;
+    box-sizing: inherit;
+    width: 100vw;
+    
+    overflow-x: hidden;
+}
+#header{
+    width: 100vw;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-areas: 
+    "img-logo nav-bar";
+    align-items: center;
+    
+}
+
+figure #header-img{
+    width: 20vw;
+}
+figure #img-logo{
+    grid-area: img-logo;
+}
+.nav-bar {
+    grid-area: nav-bar;
+}
+#nav-bar ul{
+    margin-left: 400px;
+}
+#nav-bar li{
+    display: inline;
+    margin: 30px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#features h2, #features form{
+    text-align: center;
+}
+#features input[type="email"]{
+    padding: 5px;
+}
+#features input[type="button"]{
+    display: block;
+    margin: 1rem auto;
+    background-color: var(--button-color);
+    border: none;
+    padding: .3rem;
+}
+.section-features{
+    display: grid;
+    width: 40vw;
+    padding: .5rem;
+    margin: 10px auto;
+    grid-template-columns: 60px 1fr;
+    grid-template-areas: 
+    "font-icon feature-title"
+    "font-icon paragraph";
+}
+.font-icon{
+    grid-area: font-icon;
+    color: #F1C40F;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#Pricing{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.prize-tag{
+    max-width: 300px;
+    height: 300px;
+    padding: 1rem;
+    border: var(--last-borders);
+    text-align: center;
+    display: grid;
+}
+.prize-tag input[type="button"]{
+    width: var(--button-width);
+    background-color: var(--button-color);
+    margin: 10px auto;
+    height: auto;
+    border-style: none;
+}
+input[type="button"]{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+input[type="button"]:hover{
+    background-color: #fca910;
+}
+footer{
+    margin-top: 4rem;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    flex-direction: column;
+   
+    background-color: #ED8773;
+}
+footer ul li{
+    display: inline;
+}
