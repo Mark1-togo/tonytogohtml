@@ -36,7 +36,7 @@ figure #header-img{
 figure #img-logo{
     grid-area: img-logo;
 }
-.nav-bar {
+#nav-bar {
     position: fixed;
     z-index: 999;
     grid-area: nav-bar;
