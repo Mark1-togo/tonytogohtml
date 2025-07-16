@@ -54,6 +54,7 @@ body{
     border-radius: 50%;
     top: 0;  
     left: 50%; 
+    transform: translateX(-50%);
     
 }
 @keyframes orbit{
